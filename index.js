@@ -7,7 +7,7 @@ app.get('/:text', (req, res) => {
 
     return new Promise((resolve, reject) => {
         let width = 400;
-        let height = 100;
+        let height = 200;
         let canvas = new Canvas(width, height);
         let ctx = canvas.getContext('2d');
 
