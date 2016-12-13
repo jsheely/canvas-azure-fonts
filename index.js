@@ -1,5 +1,6 @@
 const app = require('express')();
 const Canvas = require('canvas');
+const PORT = 8086;
 
 app.get('/:text', (req, res) => {
     let text = req.params.text;
@@ -39,8 +40,8 @@ if (require.main === module || (
     require.main.filename.indexOf('interceptor.js') !== -1 &&
     (require.main.children || []).indexOf(module) !== -1)
 ) {
-    app.listen(process.env.PORT, () => {
-        console.log('Image generator online on port: ' + process.env.PORT);
+    app.listen(process.env.PORT || PORT, () => {
+        console.log('Image generator online on port: ' + process.env.PORT || PORT);
     });
 }
 
