@@ -19,6 +19,11 @@ app.get('/:text', (req, res) => {
         ctx.strokeStyle = '#C4C9CC';
         ctx.strokeRect(0, 0, width, height);
 
+        // Circle
+        ctx.fillStyle = '#6f6faf';
+        ctx.arc(width/2, height/2, Math.min(width/2, height/2), 0, Math.PI * 2);
+        ctx.fill();
+
         // Text;
         ctx.fillStyle = 'black';
         ctx.font = '12px Calibri';
