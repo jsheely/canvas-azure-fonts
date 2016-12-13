@@ -63,15 +63,6 @@ function wrapText(context, text, x, y, maxWidth, lineHeight, maxLines) {
         if (testWidth > maxWidth && n > 0) {
             lines++;
 
-            // draw the baseline
-            context.save();
-            context.beginPath();
-            context.moveTo(x, y);
-            context.lineTo(maxWidth, y);
-            context.strokeStyle = 'red';
-            context.stroke();
-            context.restore();
-
             if (maxLines && lines > maxLines) {
                 context.fillText(line + '...', x, y);
                 return;
@@ -87,4 +78,13 @@ function wrapText(context, text, x, y, maxWidth, lineHeight, maxLines) {
         }
     }
     context.fillText(line, x, y);
+
+    // draw the baseline
+    context.save();
+    context.beginPath();
+    context.moveTo(x, y);
+    context.lineTo(maxWidth, y);
+    context.strokeStyle = 'red';
+    context.stroke();
+    context.restore();
 }
