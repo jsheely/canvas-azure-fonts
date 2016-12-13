@@ -1,0 +1,24 @@
+{
+  "name": "canvas-azure-fonts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsheely/canvas-azure-fonts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsheely/canvas-azure-fonts/issues"
+  },
+  "homepage": "https://github.com/jsheely/canvas-azure-fonts#readme",
+  "dependencies": {
+    "canvas": "git+https://github.com/Automattic/node-canvas.git#master",
+    "express": "^4.14.0"
+  }
+}
