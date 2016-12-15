@@ -41,6 +41,7 @@ app.get('/:text', (req, res) => {
 
 });
 
+
 if (require.main === module || (
     require.main.filename.indexOf('interceptor.js') !== -1 &&
     (require.main.children || []).indexOf(module) !== -1)
